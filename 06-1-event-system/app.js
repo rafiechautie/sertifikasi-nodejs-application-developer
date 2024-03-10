@@ -6,3 +6,12 @@ const BasicMath = {
 };
 
 // Tulis kodemu di bawah ini ...
+const eventEmitter = new EventEmitter();
+
+eventEmitter.on('calculate', BasicMath.add)
+eventEmitter.once('calculate', BasicMath.subtract)
+
+eventEmitter.emit('calculate', 2, 3)
+eventEmitter.emit('calculate', 5, 6)
+
+

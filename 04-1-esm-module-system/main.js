@@ -1,5 +1,7 @@
 // @TODO: impor fungsi unword dan reword dari utils.js
+import { unword, reword } from "./utils.js";
 // @TODO: impor class UniqueArray dari UniqueArray.js
+import UniqueArray from "./UniqueArray.js";
 
 console.log(unword('Hello'));
 console.log(reword('H', 'e', 'l', 'l', 'o'));
